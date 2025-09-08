@@ -7,7 +7,8 @@ Este repositorio contiene la web del proyecto **ANTENNA – Making Technology Wo
 ## Estructura
 - `index.html` → página principal.
 - `assets/style.css` → hoja de estilos.
-- `assets/img/` → logos e imágenes (sustituir los placeholders por los logos reales).
+- `assets/img/` → logos e imágenes.
+- `assets/pdf/` → pdfs de proyectos y posters.
 
 ## Créditos
 Proyecto **PCI2023-145956-2**, financiado por **MCIN/AEI/10.13039/501100011033** y por la **Unión Europea**.
