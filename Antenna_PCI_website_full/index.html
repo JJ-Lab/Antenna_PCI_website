@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ANTENNA | Making Technology Work for Monitoring Pollinators</title>
+  <style>
+    :root{
+      --bg:#ffffff; --fg:#0f172a; --muted:#475569; --brand:#0ea5e9; --brand2:#22c55e; --card:#f8fafc; --line:#e2e8f0;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Helvetica,Arial,sans-serif;color:var(--fg);background:var(--bg);}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--line)}
+    .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+    .nav{display:flex;align-items:center;gap:16px;min-height:60px}
+    .nav .brand{display:flex;align-items:center;gap:10px;font-weight:700}
+    .nav img.logo{height:28px}
+    .nav ul{margin-left:auto;display:flex;gap:14px;padding:0;list-style:none}
+    .nav ul li a{display:block;padding:8px 10px;border-radius:10px}
+    .nav ul li a:hover{background:var(--card)}
+
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:48px 0}
+    .hero h1{font-size:clamp(28px,4vw,44px);line-height:1.1;margin:0 0 12px}
+    .hero p{font-size:1.05rem;color:var(--muted);margin:0 0 18px}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:10px 16px;border-radius:12px;border:1px solid var(--brand);color:#fff;background:var(--brand);font-weight:600}
+    .btn.secondary{color:var(--brand);background:transparent}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+
+    section{padding:36px 0;border-top:1px solid var(--line)}
+    section h2{font-size:clamp(22px,3vw,30px);margin:0 0 14px}
+    .grid{display:grid;gap:18px}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.grid.cols-3{grid-template-columns:1fr}.grid.cols-2{grid-template-columns:1fr}}
+
+    .meta{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:14px}
+    .meta div{background:#fff;border:1px dashed var(--line);border-radius:12px;padding:10px}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#e0f2fe;color:#0369a1;font-weight:600;font-size:.9rem}
+    .logos{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+    .logos img{height:42px;filter:grayscale(10%)}
+
+    footer{padding:40px 0;border-top:1px solid var(--line);font-size:.95rem;color:var(--muted)}
+    .small{font-size:.9rem;color:var(--muted)}
+    .kicker{letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#0891b2;font-size:.8rem}
+    .list{padding-left:18px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand"><img class="logo" src="assets/img/logo_antenna.svg" alt="Logo ANTENNA"/> ANTENNA</div>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#proyecto">El proyecto</a></li>
+        <li><a href="#equipo">Consorcio</a></li>
+        <li><a href="#resultados">Resultados</a></li>
+        <li><a href="#eventos">Eventos</a></li>
+        <li><a href="#financiacion">Financiación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO / INICIO -->
+    <section id="inicio" class="hero">
+      <div>
+        <div class="kicker">Proyecto PCI2023-145956-2 · Acrónimo: ANTENNA</div>
+        <h1>Making Technology Work for Monitoring Pollinators</h1>
+        <p>
+          ANTENNA impulsa tecnologías innovadoras (visión por computador, robótica, drones y ciencia de datos) para
+          mejorar el seguimiento de polinizadores y traducir múltiples flujos de datos en indicadores y <em>forecasting</em>
+          de uso práctico para ciencia y políticas públicas.
+        </p>
+        <div class="cta">
+          <a class="btn" href="#proyecto">Leer más</a>
+          <a class="btn secondary" href="#financiacion">Créditos y financiación</a>
+        </div>
+        <div class="meta">
+          <div><strong>Entidad beneficiaria:</strong> Universidad Politécnica de Madrid (UPM)</div>
+          <div><strong>Centro:</strong> ETSI Agronómica, Alimentaria y de Biosistemas</div>
+          <div><strong>IP:</strong> Javier R. Galeano Prieto</div>
+          <div><strong>Periodo:</strong> 18/12/2023 – 17/12/2026</div>
+        </div>
+      </div>
+      <div class="card">
+        <h3 style="margin-top:0">Resumen rápido</h3>
+        <ul class="list">
+          <li>Co-diseño de herramientas automáticas para clasificación y cámara trampa de polinizadores.</li>
+          <li>Integración de datos tradicionales y novedosos para indicadores tempranos y predicciones (corto–medio plazo).</li>
+          <li>Despliegue transnacional y hoja de ruta para su adopción en redes de monitoreo europeas.</li>
+        </ul>
+        <p class="small">Proyecto enmarcado en Biodiversa+ (convocatoria Biodiversa 2022) y alineado con EU PoMS.</p>
+      </div>
+    </section>
+
+    <!-- EL PROYECTO -->
+    <section id="proyecto">
+      <h2>El proyecto</h2>
+      <div class="grid cols-2">
+        <div>
+          <p>
+            El objetivo general de <strong>ANTENNA</strong> es cubrir vacíos clave del monitoreo de polinizadores avanzando
+            tecnologías que complementen los esquemas europeos, y ofrecer <strong>canales probados</strong> desde la
+            monitorización hasta <strong>datasets curados</strong>, <strong>indicadores</strong> y <strong>modelos de pronóstico</strong> con utilidad para
+            gestores y responsables de políticas.
+          </p>
+          <h3>Objetivos específicos</h3>
+          <ul class="list">
+            <li>Avanzar herramientas de <strong>clasificación y ordenación automática</strong> de muestras.</li>
+            <li>Expandir el seguimiento a <strong>taxones y entornos</strong> poco estudiados.</li>
+            <li>Cuantificar <strong>valor añadido</strong> frente a métodos tradicionales (información vs. coste).</li>
+            <li>Desarrollar un <strong>marco integrador</strong> de datos y modelos para <em>early warning</em>.</li>
+            <li>Escalar a <strong>redes transnacionales</strong> con guías para su adopción.</li>
+          </ul>
+          <p class="small">Tecnologías clave: visión por computador, sensores automatizados, eDNA, UAV/LiDAR, y aprendizaje automático.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Datos administrativos (PCI)</h3>
+          <div class="meta">
+            <div><strong>Referencia:</strong> PCI2023-145956-2</div>
+            <div><strong>Concesión total:</strong> 58.080,00 €</div>
+            <div><strong>Acrónimo:</strong> ANTENNA</div>
+            <div><strong>Título:</strong> Making Technology Work for Monitoring Pollinators</div>
+          </div>
+          <p class="small" style="margin-top:10px">Los detalles se corresponden con el informe de seguimiento intermedio (AEI).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSORCIO -->
+    <section id="equipo">
+      <h2>Consorcio</h2>
+      <p>
+        El consorcio integra competencias en ingeniería, IA, ecología de polinizadores, teledetección y modelización
+        ecológica. Instituciones: UFZ (Alemania), Naturalis (Países Bajos), CSIC y UPM (España), AU (Dinamarca), TCD (Irlanda),
+        y UAegean (Grecia).
+      </p>
+      <div class="logos" aria-label="Logos de instituciones (sustituye por archivos reales)">
+        <img src="assets/img/Logo_union_europea.svg" alt="Logo Unión Europea"/>
+        <img src="assets/img/logo_AEI.png" alt="Logo Agencia Estatal de Investigación"/>
+        <img src="assets/img/logo_UPM.png" alt="Logo UPM"/>
+      </div>
+    </section>
+
+    <!-- RESULTADOS -->
+    <section id="resultados">
+      <h2>Resultados y avances</h2>
+      <div class="grid cols-2">
+        <div>
+          <h3>Desarrollo de modelos y librería</h3>
+          <ul class="list">
+            <li>Librería en <strong>Python</strong> para predicciones a largo plazo (primer prototipo público próximamente).</li>
+            <li>Modelos de tendencia <strong>tipo S</strong> (signo de cambio) y <strong>tipo M</strong> (abundancias).</li>
+            <li>Primeras pruebas con <strong>reservoir computing</strong> dentro de las técnicas de <em>machine learning</em>.</li>
+          </ul>
+          <h3>Datos y preparación</h3>
+          <ul class="list">
+            <li>Datos de polinizadores (EBD-CSIC), mariposas (UFZ, eBMS) y <strong>datos públicos</strong> para validación.</li>
+            <li>Integración de <strong>datos abióticos</strong> (temperatura, humedad, etc.) desde el API de Copernicus.</li>
+            <li>Limpieza y estandarización intensiva para múltiples fuentes heterogéneas.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Difusión</h3>
+          <ul class="list">
+            <li>Póster del proyecto en <strong>FisEs 2025</strong> (Santiago de Compostela).</li>
+            <li>Próxima demo de herramienta sencilla con modelos iniciales.</li>
+          </ul>
+          <p class="small">Descargas previstas: póster, documentación técnica y repositorio (cuando estén disponibles).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTOS Y FORMACIÓN -->
+    <section id="eventos">
+      <h2>Eventos y formación</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3 style="margin-top:0">Hitos del proyecto</h3>
+          <ul class="list">
+            <li><strong>Kick-off</strong> del consorcio (UFZ, Alemania, 2024).</li>
+            <li><strong>Reunión intermedia</strong> (EBD-CSIC, Sevilla, 2024): adopción de estándares EFI para salidas de modelos.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Formación</h3>
+          <ul class="list">
+            <li><strong>Introducción a la IA para investigación</strong> (ICE, UPM, Madrid, 23–25 abril 2025).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINANCIACIÓN -->
+    <section id="financiacion">
+      <h2>Financiación y reconocimientos</h2>
+      <p>
+        Proyecto <span class="pill">PCI2023-145956-2</span> financiado por el <strong>Ministerio de Ciencia, Innovación y Universidades</strong>
+        — Agencia Estatal de Investigación (AEI) y por la <strong>Unión Europea</strong>.
+      </p>
+      <p class="small">
+        Texto sugerido: «Proyecto PCI2023-145956-2 financiado por MCIN/AEI/10.13039/501100011033 y por la Unión Europea».
+      </p>
+      <div class="logos" aria-label="Logos oficiales (reemplaza URLs por archivos reales)">
+        <img src="assets/img/Logo_union_europea.svg" alt="Logo Unión Europea"/>
+        <img src="assets/img/logo_AEI.png" alt="Logo Agencia Estatal de Investigación"/>
+        <img src="assets/img/logo_UPM.png" alt="Logo UPM"/>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p><strong>IP:</strong> Javier R. Galeano Prieto · UPM</p>
+      <p class="small">Para consultas del proyecto o colaboración, por favor, escriba al equipo UPM.</p>
+      <div class="grid cols-2" style="margin-top:6px">
+        <div class="card">
+          <h3 style="margin-top:0">Documentos</h3>
+          <ul class="list">
+            <li><a href="INSERTA_URL_INFORME_INTERMEDIO" target="_blank" rel="noopener">Informe de seguimiento intermedio (PDF)</a></li>
+            <li><a href="INSERTA_URL_DESCRIPCION_EU" target="_blank" rel="noopener">Descripción del proyecto europeo (PDF)</a></li>
+          </ul>
+          <p class="small">Sustituye los enlaces por los archivos alojados en tu Google Drive / UPM.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0">Enlaces</h3>
+          <ul class="list">
+            <li><a href="INSERTA_URL_GITHUB" target="_blank" rel="noopener">Repositorio GitHub (librería de modelos)</a></li>
+            <li><a href="INSERTA_URL_POSTER" target="_blank" rel="noopener">Póster FisEs 2025</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © <span id="y"></span> ANTENNA · Biodiversa+ · UPM. 
+      <span class="small">Este sitio usa únicamente HTML/CSS estático, optimizado para su inserción en Google Sites.</span>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>

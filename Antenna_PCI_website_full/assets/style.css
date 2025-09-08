@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+header, footer {
+  background: #0ea5e9;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+main {
+  padding: 1em;
+}
+h1, h2 {
+  color: #0f172a;
+}
+section {
+  margin-bottom: 2em;
+}
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+.logos img {
+  height: 60px;
+  background: #fff;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+.logo {
+  height: 60px;
+  display: block;
+  margin: 0 auto 10px;
+}
